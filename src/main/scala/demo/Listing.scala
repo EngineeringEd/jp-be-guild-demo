@@ -5,7 +5,7 @@ case class Listing(
   isDeleted: Boolean,
   isHidden: Boolean,
   title: String = "Test Listing",
-  var cleansingState: CleansingStateEnum = CleansingStateEnum.New
+  cleansingState: CleansingStateEnum = CleansingStateEnum.New
 ) {
   def getStatus: String = {
     return unapply(this) match {
